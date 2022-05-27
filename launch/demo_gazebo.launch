@@ -28,11 +28,11 @@
   <arg name="urdf_path" default="$(find exprob_assignment3)/urdf/robot31.urdf"/>
 
   <!-- launch the gazebo simulator and spawn the robot -->
-  <include file="$(find moveit_test_nocollision)/launch/gazebo.launch" >
+ <include file="$(find moveit_test_nocollision)/launch/gazebo.launch" >
     <arg name="paused" value="$(arg paused)"/>
     <arg name="gazebo_gui" value="$(arg gazebo_gui)"/>
     <arg name="urdf_path" value="$(arg urdf_path)"/>
-  </include>
+  </include> 
 
   <!-- If needed, broadcast static tf for robot root -->
   
